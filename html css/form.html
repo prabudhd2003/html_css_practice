@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <header>
+        </header>
+        <main>
+        <form action="myserver.com" method="POST">
+            <label for="email">Please enter your email:</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+            <label for="mo-number">Please enter you phone-no.: </label>
+            <input type="tel" name="mo-number" id="mo-number" pattern="[+]{91}[0-9]{11,14}">
+            <br><br>
+            <fieldset>
+            <input type="checkbox" id="dog" value="Dog" name="dog">
+            <label for dog>Dog</label>
+            <input type="checkbox" id="cat" name="cat" value="Cat">
+            <label for cat>Cat</label>
+            </fieldset>
+            <br>
+            <fieldset id="food">
+                <label>
+                    <input type="radio" id="food" name="food"> Chicken  
+                </label>
+                <label>
+                    <input type="radio" id="food2" name="food" checked> Mutton
+                </label>
+            </fieldset>
+            <br>
+            <label for date>Please enter yor date of birth: </label>
+            <input type="date" id="date" name="date">
+            <br>
+            <label for time-of-birth>Please eneter time of birth</label>
+            <input type="datetime-local" id="time-of-birth" name="time">           
+            <br>
+            <button onclick="alert('Are you sure you want to continue?')">
+                <img src="https://yourserver.com/button_img.jpg" alt="Submit the form" height="64" width="64">
+            </button>
+            <br>
+            <input type="submit" value="Submit"/>
+        </form>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

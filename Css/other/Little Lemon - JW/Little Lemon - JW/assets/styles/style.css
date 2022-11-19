@@ -1,0 +1,148 @@
+html, body {
+	background-color: #f0f2f5;
+	font-family: 'Roboto';
+	font-size: 1rem;
+	font-style: normal;
+	margin: 1rem 2% 0.5rem 2%;
+	padding: 0 0 0 0;
+}
+
+h1 {font-size: 3rem; margin: 1.5rem auto;}
+h2 {font-size: 2rem; margin: 1rem auto;}
+
+/* HEADER */
+header > img {
+	display: block;
+	margin: 0 auto;
+	width: 35%;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #ededed;
+    border-radius: 8px;
+	border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    margin: 1.1rem 1rem;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    padding-inline-start: 0rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0.25rem;
+}
+
+nav ul a {
+    color: #474747;
+    text-decoration: none;
+	padding: 0 1.8rem;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+}
+
+/* MAIN */
+section {
+	display: flex;
+}
+
+#a-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 30%;
+}
+
+article > a {
+    text-decoration: none;
+}
+
+article > a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+}
+
+article > img {
+	max-width: 100%;
+    border-radius: 4px;
+}
+
+article > ul {
+    list-style: none;
+    padding-left: 0rem;
+}
+
+#announcement {
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-position: center;
+	text-shadow: 1px 1px 1px #FFF;
+}
+
+.box {
+	align-items: center;
+    background-color: #ededed;
+    transition: background-color 1s linear 0s;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    margin: 1.1rem 1rem;
+    padding: 1rem 2rem;
+}
+
+.box:hover {
+    background-color: #FFFFFF;
+}
+
+/* FOOTER */
+footer {
+    margin: 1.1rem 1rem;
+    display: flex;
+    gap: 2rem 1rem;
+}
+
+footer img {
+    max-width: 50%;
+}
+
+footer p {
+    text-align: right;
+}
+
+footer div {
+    flex: 1;
+}
+
+
+/* RESPOSIVE */
+@media only screen and (max-width: 1086px) {
+    h1 {font-size: 2rem; margin: 1rem auto;}
+    h2 {font-size: 1.2rem; margin: 0.8rem auto;}
+    nav ul {font-size: 1.5rem;}
+    nav ul a {padding: 0 1rem;}
+    article{flex: 40%;}
+    .box {font-size: 0.8rem; padding-bottom: 1.5rem;}
+    .box h2 {font-size: 1.5rem;}
+}
+
+@media only screen and (max-width: 960px) {
+    h1 {font-size: 2rem; margin: 1rem auto;}
+    h2 {font-size: 1.2rem; margin: 0.8rem auto;}
+    header > img {max-width: 35%;}
+    nav ul a {padding: 0 0.8rem;}
+    article{flex: 100%;}
+    footer img {max-width: 15%;}
+}
